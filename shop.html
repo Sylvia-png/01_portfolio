@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>hola mundo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="with=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>TX-Auction</title>
+    <script type="text/javascript">
+        function si() {
+          var elemento = document.getElementById("adicional");
+          elemento.className = "visible";
+
+          var enlace = document.getElementById("enlace");
+          enlace.className = "oculto";
+        }
+    </script>
 </head>
 <body>
     <div id ="header">
         <ul class="nav">
-            <li><a href="./about/about.html">ABOUT</a>
+            <li><a href="about/about.html">ABOUT</a>
                 <ul>
-                    <li><a href="./about/history.html">HISTORY</a></li>
+                    <li><a href="about/history.html">HISTORY</a></li>
                     <li><a href="./about/staff.html">STAFF</a></li>
                     <li><a href="./about/board.html">BOARD</a></li>
                     <li><a href="./about/sponsor.html">BECOME A SPONSOR</a></li>
@@ -31,6 +41,68 @@
             <li><a href="donate.html">DONATE</a></li>
         </ul>
     </div>
-    
+
+    <div class="shop">
+    <h2>TX- Auction</h2>
+    <h4>How to Shop</h4>
+    <ul>
+    <li> Orders are fulfilled by the artists, so you can only order from one artist at a time. </li>
+     <li>Artists have different options for pickup and shipping and may not offer both. </li>
+     <li>Create an account (optional) when you place an order to save your billing info for fast future orders. </li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a id="enlace" href="#" onclick="si(); return false;">Let's get started!</a>
+    <span id="adicional" class="oculto">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="">
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2545&q=80" alt="Paintings" width="600" height="400">
+            </a>
+        <div class="desc">
+            <p> Flower Painting $120.00  From: Katy Simpson
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="">
+              <img src="https://images.unsplash.com/photo-1561839561-b13bcfe95249?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2454&q=80" alt="Sculpture" width="600" height="400">
+            </a>
+            <div class="desc">
+            <p> Sculpture $320.00  From: Liam Williams
+            </p>
+        </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="https://images.unsplash.com/photo-1532479255663-1ded0438a701?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1118&q=80">
+              <img src="https://images.unsplash.com/photo-1532479255663-1ded0438a701?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1118&q=80" alt="paintings" width="600" height="400">
+            </a>
+            <div class="desc">
+            <p> Red door paint $150.00  From: Charlotte Miller
+            </p>
+        </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="https://images.unsplash.com/photo-1578925518470-4def7a0f08bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80">
+              <img src="https://images.unsplash.com/photo-1578925518470-4def7a0f08bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Crown" width="600" height="400">
+            </a>
+            <div class="desc">
+            <p> Crown $200.00  From: Ava Jones
+            </p>
+        </div>
+          </div>
+        </div>
+    </span>
+
 </body>
 </html>
