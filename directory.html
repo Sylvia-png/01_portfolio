@@ -5,32 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
     <title>hola mundo</title>
 </head>
 <body>
     <div id ="header">
         <ul class="nav">
             <li><a href="./about/about.html">ABOUT</a>
-                <ul>
-                    <li><a href="./about/history.html">HISTORY</a></li>
-                    <li><a href="./about/staff.html">STAFF</a></li>
-                    <li><a href="./about/board.html">BOARD</a></li>
-                    <li><a href="./about/sponsor.html">BECOME A SPONSOR</a></li>
-                </ul>
-            </li>
             <li><a href="directory.html">DIRECTORY</a></li>
             <li><a href="shop.html">SHOP</a>
-            <li><a href="./events/events.html">EVENTS</a>
-                <ul>
-                    <li><a href="./events/monthly.html">MONTHLY EVENTS</a></li>
-                    <li><a href="./events/artAction.html">ART AUCTION</a></li>
-                </ul>
-            </li>
-            <li><a href="join.html">JOIN</a></li>
-             <li><a href="myAccount.html">MY ACCOUNT</a></li>
+            <li><a href="./join/join.html">MY ACCOUNT</a></li>
             <li><a href="donate.html">DONATE</a></li>
+            <a href="index.html">Home</a>
         </ul>
     </div>
-    
-</body>
+        <h1 class="ml2">  Directory</h1>
+            <div class ="text-all">
+                 <p>
+                I'am Sylvia,<br>
+                The internet and technology have become the center of our lives, since every day we enter a network, whether for work, study or leisure, so software development has become a very important professional area now a days.
+                Personally, in my first professional job as a Dentist being connected to the internet became a necessary to keep me update.
+                Now the I had the opportunity to work with the skills of HTML, CSS, and JavaScript I realize that not only the internet is important that there are also other ways of communication between human beings.
+                I love code, I find it very interesting to type certain symbols and get a script to later form a project.
+                I want to learn more code every day.
+                This is my: https://www.linkedin.com/in/sylvia-mccormick-b4b71680/
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440899.7349629454!2d-98.03359743658255!3d30.307462407905362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20Texas%2C%20EE.%20UU.!5e0!3m2!1ses-419!2smx!4v1641592375918!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
+        </div>
+         <script>
+                    // Wrap every letter in a span
+                    var textWrapper = document.querySelector('.ml2');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            
+                    anime.timeline({loop: true})
+                    .add({
+                        targets: '.ml2 .letter',
+                        scale: [4,1],
+                        opacity: [0,1],
+                        translateZ: 0,
+                        easing: "easeOutExpo",
+                        duration: 950,
+                        delay: (el, i) => 70*i
+                    }).add({
+                        targets: '.ml2',
+                        opacity: 0,
+                        duration: 1000,
+                        easing: "easeOutExpo",
+                        delay: 1000
+                    });
+                </script>
+            </body>
 </html>

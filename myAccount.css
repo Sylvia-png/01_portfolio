@@ -1,9 +1,9 @@
 body {
-    display: flex;
-    margin-top: 50px;
-    justify-content: center;
-    background-color: #FFFCFF;
-  }
+    background: url(../img/bg2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Roboto;
+}
   
   .padding {
     cursor: default !important;

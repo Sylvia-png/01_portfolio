@@ -2,6 +2,12 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+  background: url(./join/img/bg2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Roboto;
+}
 
 #header{
   margin: auto;
@@ -19,8 +25,8 @@ ul, ol {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
-  display: block;
+  padding: 10px 24px;
+  display: inline-block;
 }
 
 .nav li a:hover{
@@ -55,7 +61,7 @@ ul, ol {
 
 #header{
   margin: auto;
-  width: 800px;
+  width: 607px;
   font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -67,7 +73,7 @@ ul, ol {
   background-color: #000;
   color: #fff;
   text-decoration: none;
-  padding: 10px 15px;
+  padding: 10px 24px;
   display: block;
 }
 
@@ -136,4 +142,22 @@ ul, ol {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+}
+
+.text-all{
+  width: 1000px;
+  height: 315px;
+  margin: 0 auto;
+  background-color: rgba(40, 25, 25, 0.42);
+  font-size: xx-large;
+  text-align: justify;
+}
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
 }

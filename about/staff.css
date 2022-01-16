@@ -331,4 +331,20 @@ ul, ol {
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
 }
-
+.text-all{
+    width: 1000px;
+    height: 315px;
+    margin: 0 auto;
+    background-color: rgba(154, 144, 144, 0.438);
+    font-size: xx-large;
+    text-align: justify;
+  }
+  .ml2 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
